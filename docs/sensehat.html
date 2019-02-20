@@ -10,11 +10,12 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="vendor/color-picker/color-picker.min.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/page-sensehat.css" rel="stylesheet">
 </head>
-
 <body>
-  <header class="header">
+  <header class="header" role="header">
     <div class="container-fluid container-header d-flex flex-row justify-content-between">
       <h1 class="header__logo" role="banner">
         <a href="" title="">Logo Grafische en digitale media</a>
@@ -28,26 +29,16 @@
   </div><!-- .marquee -->
   <main class="main" role="main">
     <div class="container">
-      <div class="row d-flex flex-row justify-content-center">
-        <h2 class="main__title">Like Graphics Love Code</h2>
-      </div>
-    </div>
-    <div class="container">
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="card card--workshop">
-            <img src="./assets/images/sense-hat.png" class="card-img-top" alt="Sense HAT">
-            <div class="card-body">
-              <h5 class="card-title">Sense HAT</h5>
-              <p class="card-text">Read sensors and manipulate LED matrix via JavaScript, Python and Firebase.</p>
-              <a href="sensehat.html" class="btn btn-primary btn--red">Read more...</a>
-            </div>
-          </div>
-        </div>
+        <!--
+          Write HTML Here
+        -->        
       </div>
     </div>
   </main><!-- .main -->
-</body>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <script src="vendor/color-picker/color-picker.min.js"></script>
+  <script src="assets/js/sensehat.js"></script>
 </body>
 
 </html>

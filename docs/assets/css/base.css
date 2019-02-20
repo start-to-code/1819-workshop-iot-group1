@@ -1,0 +1,148 @@
+/*
+Webfonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:300,300i,400,400i,600,600i,700,700i');
+/*
+Variables
+*/
+:root {
+	--color-blue: #64D9DC;
+	--color-green: #ACF363;
+	--color-purple: #A171F3;
+	--color-red: #E96F5F;
+	--color-yellow: #E9F35F;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-grey-dark: #2B3640;
+	--color-grey-mid: #818890;
+	--color-grey-light: #414D5B;
+	--gutter: 15px;
+	--font-family-montserrat: 'Montserrat', sans-serif;
+	--font-family-opensans: 'Open Sans', sans-serif;
+}
+html, body {
+	margin: 0;
+	padding: 0;	
+}
+body {
+	font-family: var(--font-family-opensans);
+	font-weight: 400;
+	font-size: 18px;
+    line-height: 1.52;
+    position: relative;
+    z-index: -999;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-montserrat);
+	font-size: 18px;
+	line-height: 1.42;
+}
+.header {
+    position:relative;
+    z-index: 999;
+	background: var(--color-white) url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%2364d9dc' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E") repeat top center;
+	padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+}
+.header__logo {
+	display: block;
+	background: url('../images/logo.svg') no-repeat left center;
+	height: 58px;
+	width: 545.705641025641px;
+	background-size: contain;
+	text-indent: -999em;
+	margin: 0;
+	padding: 0;
+}
+/*
+Marquee
+*/
+.marquee {
+    position:relative;
+    z-index: 998;
+	background: var(--color-blue);
+	padding: var(--gutter);
+	
+	font-family: var(--font-family-montserrat);
+	font-weight: 700;
+	font-size: 24px;
+	
+    overflow: hidden;
+    
+    border-bottom: 2px solid var(--color-black);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.27);
+}
+.marquee__content {
+	width: auto;
+}
+.marquee__title {
+    text-transform: uppercase;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 24px;
+
+    color: var(--color-black);
+}
+
+.marquee__title .baseline::before {
+    content: ':';
+    margin-left: 5px; 
+    margin-right: 15px; 
+}
+/*
+Main
+*/
+.main {
+    position: relative;
+    z-index:-2;
+    background: var(--color-red) url("../images/bg.svg") repeat top center;
+    min-height: calc(100vh - 152px);
+}
+.main__title {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+
+    margin: calc(var(--gutter)*4) auto;
+    padding: var(--gutter) calc(var(--gutter)*2);
+
+    border: 2px solid var(--color-grey-dark);
+    background: var(--color-white);
+}
+.main__title::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    left: 15px;
+    height: 100%;
+    width: 100%;
+    
+    /* Declaring our shadow color inherit from the parent (button) */
+    background: linear-gradient(to bottom, var(--color-white) 0%,var(--color-red) 100%);
+    
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/*
+Buttons
+*/
+.btn--red {
+    background: var(--color-red);
+    border-color: var(--color-red);
+    border-radius: 0;
+}
+.btn--red:hover {
+    background: var(--color-blue);
+    border-color: var(--color-blue);
+}
+/*
+Cards
+*/
+.card--workshop {
+    overflow: hidden;
+}
