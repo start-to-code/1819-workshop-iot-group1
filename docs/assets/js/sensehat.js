@@ -21,6 +21,22 @@ Cloud:
 
 'use strict'
 
+/*
+Configuration
+-------------
+...
+example:
+
+pi_id: stc_pi_1 ... stc_pi_10
+
+use stc_pi_1 for Raspberry Pi: pi-nmd-iot-1
+use stc_pi_10 for Raspberry Pi: pi-nmd-iot-10
+
+student: {
+  firstName: 'Philippe',
+  lastName: 'De Pauw - Waterschoot'
+}
+*/
 const config = {
   firebase: {
     apiKey: 'AIzaSyAb_oy301KscmyVEypq_3zvmZT-jABqG6I',
@@ -31,7 +47,11 @@ const config = {
     messagingSenderId: '659804621253',
   },
   pis_collection_name: 'pis',
-  pi_id: 'stc_pi_1',
+  pi_id: '...',
+  student: {
+    firstName: '...',
+    lastName: '...'
+  }
 }
 
 ;((window) => {

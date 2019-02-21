@@ -38,5 +38,4 @@ while True:
 
     except (KeyboardInterrupt, SystemExit):
         print('Interrupt received! Stopping the application...')
-        sense.clear()
         sys.exit(0)
