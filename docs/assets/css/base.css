@@ -69,7 +69,7 @@ Marquee
 	
     overflow: hidden;
     
-    border-bottom: 2px solid var(--color-black);
+    border-bottom: 5px solid var(--color-black);
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.27);
 }
 .marquee__content {
@@ -98,6 +98,7 @@ Main
     z-index:-2;
     background: var(--color-red) url("../images/bg.svg") repeat top center;
     min-height: calc(100vh - 152px);
+    padding: calc(var(--gutter)*4) 0;
 }
 .main__title {
     display: inline-block;
@@ -107,10 +108,10 @@ Main
     font-weight: 700;
     font-size: 32px;
 
-    margin: calc(var(--gutter)*4) auto;
+    margin: 0 auto calc(var(--gutter)*4) auto;
     padding: var(--gutter) calc(var(--gutter)*2);
 
-    border: 2px solid var(--color-grey-dark);
+    border: 5px solid var(--color-grey-dark);
     background: var(--color-white);
 }
 .main__title::after {
@@ -145,4 +146,13 @@ Cards
 */
 .card--workshop {
     overflow: hidden;
+    border-radius: 0;
+    border: 5px solid var(--color-black);
+    box-shadow: -15px 15px 5px 0px rgba(0,0,0,0.27);
+}
+
+.card--workshop img {
+    border-bottom: 5px solid var(--color-black);
+    background: var(--color-black);
+    border-radius: 0;
 }
